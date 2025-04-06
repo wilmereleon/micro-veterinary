@@ -1,0 +1,26 @@
+# Ignorar archivo PDF del parcial
+primer_parcial.pdf
+
+# Archivos y carpetas que no deben subirse
+*.log
+*.log.*
+*.out
+*.class
+*.jar
+*.war
+target/
+.idea/
+.vscode/
+*.iml
+node_modules/
+.env
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
