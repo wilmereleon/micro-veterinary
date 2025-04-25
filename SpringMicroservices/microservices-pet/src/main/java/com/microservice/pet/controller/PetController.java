@@ -15,23 +15,19 @@ public class PetController {
     public PetController(IPetService petService) {
         this.petService = petService;
     }
-
     @PostMapping("/ceate")
     @ResponseStatus(HttpStatus.CREATED)
     public void saveClient(@RequestBody Pet pet) {
         petService.save(pet);
     }
-
     @GetMapping("/all")
     public ResponseEntity<?> findAllClient() {
         return ResponseEntity.ok(petService.findAll());
     }
-
     @GetMapping(    "/search/{id}")
     public ResponseEntity<?> findById(@PathVariable Long id) {
         return ResponseEntity.ok(petService.findById(id));
     }
-
     @GetMapping( "/search/clients/{idPet}")
     public ResponseEntity<?> findClientByIdPet(@PathVariable Long idPet){
         return ResponseEntity.ok(petService.findClientByIdPet(idPet));

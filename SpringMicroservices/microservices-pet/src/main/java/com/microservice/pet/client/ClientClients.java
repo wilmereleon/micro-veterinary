@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "msvc-client", url = "localhost:8090/api/client")
+@FeignClient(name = "msvc-client", url = "localhost:8080/api/client")
 public interface ClientClients {
 
     @GetMapping( "/search-by-pet/{idPet}")
