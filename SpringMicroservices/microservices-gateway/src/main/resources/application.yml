@@ -14,7 +14,7 @@ spring:
       routes:
         - id: clients
           uri:
-            http://localhost:8090
+            http://localhost:8060
           predicates:
             - Path=/api/client/**
         - id: pets
