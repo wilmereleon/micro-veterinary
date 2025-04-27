@@ -1,4 +1,4 @@
-package com.microservices.gateway;
+package com.microservice.gateway;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ public class CorsConfig {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("*");
+        config.addAllowedOrigin("*");git
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
